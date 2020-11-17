@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/styly.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+  integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous" />
+</head>
+
+
+<main>
+
+    <header class="text-center bg-dark">
+        <h1 class="display-2 text-light bg-dark">Geometrické výpočty</h1>
+    </header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="navbar-toggler-right">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+      </div> 
+    
+      <div class="collapse navbar-collapse flex-column " id="navbar">
+    
+        <ul class="navbar-nav  w-100 justify-content-center px-3">
+              <li class="nav-item active">
+                <a class="nav-link" href="lichobeznik.html">Lichoběžník</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="rovnobeznik.html">Rovnoběžník</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="trojuhlenik.html">Trojúhelník</a>
+              </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h2 class="mb-4 p-3 text-uppercase text-center text-light bg-dark">
+      LICHOBĚŽNÍK
+      </h2>
+      <div class="container">
+          <form>
+              
+              <div>
+                  <label for="sidea" class="col-sm-3 col-form-label">Strana <i>a</i> v cm</label>
+                  <div class=>
+                      <input type="number" class="form-control" name="sidea" id="sidea" value="" />
+                  </div>
+              </div>
+              <div>
+                <label for="sideb" class="col-sm-3 col-form-label">Strana <i>b</i> v cm</label>
+                <div class=>
+                    <input type="number" class="form-control" name="sideb" id="sideb" value="" />
+                </div>
+            </div>
+            <div>
+              <label for="sidec" class="col-sm-3 col-form-label">Strana <i>c</i> v cm</label>
+              <div class=>
+                  <input type="number" class="form-control" name="sidec" id="sidec" value="" />
+              </div>
+          </div>
+          <div>
+            <label for="sided" class="col-sm-3 col-form-label">Strana <i>d</i> v cm</label>
+            <div class=>
+                <input type="number" class="form-control" name="sided" id="sided" value="" />
+            </div>
+        </div>
+        <div>
+          <label for="sidev" class="col-sm-3 col-form-label">Výška <i>v</i> v cm</label>
+          <div class=>
+              <input type="number" class="form-control" name="sidev" id="sidev" value="" />
+          </div>
+      </div>
+             
+              <div>
+                  <div class="tlac">
+                      <button type="button" onclick="calc()" class="btn btn-dark text-light">
+                          Vypočítat
+                      </button>
+                  </div>
+              </div>
+              
+          </form>
+          <hr />
+          
+          <div id="result" class="display-4">Obsah</div>
+          <div id="result2" class="display-4">Obvod</div>
+      </div>
+
+
+
+
+</main>
+
+
+
+
+
+<footer class="container-fluid text-center">
+    <hr />
+    <p>&copy; 2020 - IT2</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+    integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous">
+</script>
+<script src="js/mainlichob.js"></script>
+</body>
+
+</html>
