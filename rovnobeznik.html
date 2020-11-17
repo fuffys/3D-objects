@@ -48,31 +48,30 @@
       <div class="container">
           <form>
               
-              <div>
-                  <label for="sideVa" class="col-sm-3 col-form-label">Strana <i>Va</i> v cm</label>
-                  <div class=>
-                      <input type="number" class="form-control" name="sideVa" id="sideVa" value="" />
-                  </div>
-              </div>
-              <div>
-                <label for="sideVb" class="col-sm-3 col-form-label">Strana <i>Vb</i> v cm</label>
-                <div class=>
-                    <input type="number" class="form-control" name="sideVb" id="sideVb" value="" />
-                </div>
-            </div>
             <div>
-              <label for="sideVa" class="col-sm-3 col-form-label">Strana <i>c</i> v cm</label>
+              <label for="sidea" class="col-sm-3 col-form-label">Strana <i>a</i> v cm</label>
               <div class=>
                   <input type="number" class="form-control" name="sidea" id="sidea" value="" />
               </div>
           </div>
           <div>
-            <label for="sideVb" class="col-sm-3 col-form-label">Strana <i>d</i> v cm</label>
+            <label for="sideb" class="col-sm-3 col-form-label">Strana <i>b</i> v cm</label>
             <div class=>
-                <input type="number" class="form-control" name="sidea" id="sideb" value="" />
+                <input type="number" class="form-control" name="sideb" id="sideb" value="" />
             </div>
         </div>
-             
+        <div>
+            <label for="sideVa" class="col-sm-3 col-form-label">Strana <i>Va</i> v cm</label>
+            <div class=>
+                <input type="number" class="form-control" name="sideVa" id="sideVa" value="" />
+            </div>
+        </div>
+        <div>
+          <label for="sideVb" class="col-sm-3 col-form-label">Strana <i>Vb</i> v cm</label>
+          <div class=>
+              <input type="number" class="form-control" name="sideVb" id="sideVb" value="" />
+          </div>
+      </div>
               <div>
                   <div class="tlac">
                       <button type="button" onclick="calc()" class="btn btn-dark text-light">
@@ -84,8 +83,9 @@
           </form>
           <hr />
           
-          <div id="result" class="display-4">Obsah</div>
-          <div id="result2" class="display-4">Obvod</div>
+          <div id="result" class="display-4">Obsah Va</div>
+          <div id="result2" class="display-4">Obsah Vb</div>
+          <div id="result3" class="display-4">Obvod</div>
       </div>
 
 
@@ -99,7 +99,7 @@
 
 <footer class="container-fluid text-center">
     <hr />
-    <p>&copy; 2020 - IT2</p>
+    <p>&copy; Lukáš Vrba - 2020 - IT2</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
